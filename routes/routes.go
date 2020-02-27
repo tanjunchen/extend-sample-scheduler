@@ -39,7 +39,7 @@ func checkBody(w http.ResponseWriter, r *http.Request) {
 func PredicateRoute(predicate predicate.Predicate) httprouter.Handle {
 	return func(w http.ResponseWriter, r *http.Request, _ httprouter.Params) {
 		checkBody(w, r)
-		log.Print("=================PredicateRoute=====================")
+
 		var buf bytes.Buffer
 		body := io.TeeReader(r.Body, &buf)
 		log.Print("info: ", predicate.Name, " ExtenderArgs = ", buf.String())
@@ -71,7 +71,7 @@ func PredicateRoute(predicate predicate.Predicate) httprouter.Handle {
 func PrioritizeRoute(prioritize prioritize.Prioritize) httprouter.Handle {
 	return func(w http.ResponseWriter, r *http.Request, _ httprouter.Params) {
 		checkBody(w, r)
-		log.Print("=================PrioritizeRoute=====================")
+
 
 		var buf bytes.Buffer
 		body := io.TeeReader(r.Body, &buf)
@@ -104,7 +104,6 @@ func PrioritizeRoute(prioritize prioritize.Prioritize) httprouter.Handle {
 func BindRoute(bind bind.Bind) httprouter.Handle {
 	return func(w http.ResponseWriter, r *http.Request, _ httprouter.Params) {
 		checkBody(w, r)
-		log.Print("=================BindRoute=====================")
 
 		var buf bytes.Buffer
 		body := io.TeeReader(r.Body, &buf)
@@ -135,7 +134,7 @@ func BindRoute(bind bind.Bind) httprouter.Handle {
 func PreemptionRoute(preemption preemption.Preemption) httprouter.Handle {
 	return func(w http.ResponseWriter, r *http.Request, _ httprouter.Params) {
 		checkBody(w, r)
-		log.Print("=================PreemptionRoute=====================")
+
 
 		var buf bytes.Buffer
 		body := io.TeeReader(r.Body, &buf)
@@ -181,16 +180,19 @@ func DebugLogging(h httprouter.Handle, path string) httprouter.Handle {
 }
 
 func AddPredicate(router *httprouter.Router, predicate predicate.Predicate) {
+	log.Print("=================Predicate=====================")
 	path := predicatesPrefix + "/" + predicate.Name
 	router.POST(path, DebugLogging(PredicateRoute(predicate), path))
 }
 
 func AddPrioritize(router *httprouter.Router, prioritize prioritize.Prioritize) {
+	log.Print("=================Prioritize=====================")
 	path := prioritiesPrefix + "/" + prioritize.Name
 	router.POST(path, DebugLogging(PrioritizeRoute(prioritize), path))
 }
 
 func AddBind(router *httprouter.Router, bind bind.Bind) {
+	log.Print("=================Bind=====================")
 	if handle, _, _ := router.Lookup("POST", bindPath); handle != nil {
 		log.Print("warning: AddBind was called more then once!")
 	} else {
@@ -199,6 +201,7 @@ func AddBind(router *httprouter.Router, bind bind.Bind) {
 }
 
 func AddPreemption(router *httprouter.Router, preemption preemption.Preemption) {
+	log.Print("=================PreemptionRoute=====================")
 	if handle, _, _ := router.Lookup("POST", preemptionPath); handle != nil {
 		log.Print("warning: AddPreemption was called more then once!")
 	} else {

@@ -108,8 +108,8 @@ func main() {
 
 	routes.AddBind(router, NoBind)
 
-	log.Print("info: server starting on the port :8866")
-	if err := http.ListenAndServe(":8866", router); err != nil {
+	log.Print("info: server starting on the port : 80")
+	if err := http.ListenAndServe(":80", router); err != nil {
 		log.Fatal(err)
 	}
 }

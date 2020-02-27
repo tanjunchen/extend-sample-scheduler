@@ -2,24 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44a35c84-21f8-49a1-98c1-7c55cf642f2b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/REAMME.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/routers.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extend-sample-scheduler" beforeDir="false" afterPath="$PROJECT_DIR$/extend-sample-scheduler" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/k8s@192.168.17.130" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/julienschmidt/httprouter/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/julienschmidt/httprouter/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/julienschmidt/httprouter/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/julienschmidt/httprouter/go.mod" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/julienschmidt/httprouter/path.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/julienschmidt/httprouter/router.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/julienschmidt/httprouter/tree.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/modules.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-scheduler.tar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/routes.go" beforeDir="false" afterPath="$PROJECT_DIR$/routes/routes.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,10 +76,15 @@
       <screen x="67" y="27" width="1651" height="861" />
     </state>
     <state x="487" y="118" width="800" height="677" key="#Build_Tags_&amp;_Vendoring/67.27.1651.861@67.27.1651.861" timestamp="1582792789361" />
-    <state x="608" y="261" width="556" height="390" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1582540507621">
-      <screen x="67" y="27" width="1649" height="861" />
+    <state x="609" y="261" width="667" height="390" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1582798029977">
+      <screen x="67" y="27" width="1651" height="861" />
     </state>
     <state x="608" y="261" width="556" height="390" key="#com.intellij.fileTypes.FileTypeChooser/67.27.1649.861@67.27.1649.861" timestamp="1582540507621" />
+    <state x="609" y="261" width="667" height="390" key="#com.intellij.fileTypes.FileTypeChooser/67.27.1651.861@67.27.1651.861" timestamp="1582798029977" />
+    <state x="625" y="205" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1582815566767">
+      <screen x="67" y="27" width="1651" height="861" />
+    </state>
+    <state x="625" y="205" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1651.861@67.27.1651.861" timestamp="1582815566767" />
     <state x="783" y="188" width="424" height="484" key="FileChooserDialogImpl" timestamp="1582792487137">
       <screen x="67" y="27" width="1651" height="861" />
     </state>
